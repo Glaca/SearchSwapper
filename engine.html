@@ -1,0 +1,101 @@
+<html><script>
+
+
+function myFunction() {
+    document.getElementById("down").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}	
+	
+function google() {
+    var x = document.getElementById("demo");
+    x.action = "https://www.google.com.au/search?q=";
+}
+function duckduckgo() {
+    var x = document.getElementById("demo");
+    x.action = "https://duckduckgo.com/?q=";
+}
+function bing() {
+    var x = document.getElementById("demo");
+    x.action = "http://www.bing.com/search";
+}
+</script>
+<style>
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #white}
+
+
+.show {display:block;}
+
+#IDTest{color:red;}
+hr.bLine{
+	border:4px dotter black;
+	width:800px;
+	float:left;
+	}
+</style>
+<script>
+</script>
+<!--https://www.google.com.au/search?q=-->
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="down" class="dropdown-content">
+    <a href="#" onclick="duckduckgo()">DuckDuckGo</a>
+    <a href="#" onclick="google()">Google</a>
+    <a href="#" onclick="bing()">Bing</a>
+  </div>
+<form id="demo" style="border: 1px inset black; border-radius:4px; width:310px" method="get" action="https://duckduckgo.com/?q=">
+
+</div>
+
+<input type="text"  name="q" size="25" value="" placeholder="Search..."/>
+<input type="submit" value="Search"  /><br/>
+</form>
+<hr class="bLine"/>
+</html>
