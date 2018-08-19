@@ -1,0 +1,146 @@
+<html>		
+<meta charset="UTF-8">	
+<title>Steam Browser Home</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script>
+
+
+function google() {
+    var x = document.getElementById("demo");
+    x.action = "https://www.google.com.au/search?q=";
+}
+function duckduckgo() {
+    var x = document.getElementById("demo");
+    x.action = "https://duckduckgo.com/?q=";
+}
+function youtube() {
+    var x = document.getElementById("demo");
+    x.action = "http://www.youtube.com/results";
+}
+</script>
+
+<style>
+.sub-menu-parent { position: relative; }
+
+.sub-menu { 
+  visibility: hidden; 
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; 
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; 
+}
+
+
+body { padding: 2%; font: 18px/1.4 sans-serif; }
+
+nav a { color: #E00; display: block; padding: 0.5em 0.5em; text-decoration: none; }
+nav a:hover { color: #F55; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background: lightblue; text-align: center; } /*the bar*/
+nav > ul > li { display: inline-block; border-left: solid 1px #aaa; }
+nav > ul > li:first-child { border-left: none; }
+
+.sub-menu {
+  background: #DDD;
+}
+			a:link{color: #ffffff;font-family: Arial; text-decoration: none;}
+			a:visited {color: lightpurple; font-family: Arial;}
+			a:hover {color: #c6d4df;font-family: Arial; text-decoration: underline;}
+			
+			body { background-color: #1a2838; color: #ffffff; font-family: Arial;}
+
+</style>
+
+<!-- -->
+
+<div style="color: #BDBBB9; background-color: #171a21; height: 100px; margin: 0; padding: 0; position: absolute; top: 0; left: 0; width: 100%;">
+		<table  align="center"><tr align="center" style="height: 99px; margin: 10; padding: 10; vertical-align: middle;"><td><img src="pics/steam.png"></td><td><h1>Steam Browser Home</h1></td></tr></table>
+		</div>
+
+		<!--Main-->
+		<div align="center" style="padding-top: 100px;">
+			<form id="searchbar" action="http://duckduckgo.com" method="get" target="_blank">
+			<div style="border:1px solid #D2D2D2; display:inline-block">
+				<table><tr>
+					<td><input style="height:30px;width:300px;border:0;" type="text" id="q" name="q" placeholder="&nbsp;Search" maxlength="128"/></td>
+					<td style="background-color: #ffffff; border:1px solid #D2D2D2; display:inline-block"><input onclick="duckduckgo()" type="image" src="pics/duckduckgo.png" height="32" width="32" alt="DuckDuckGo" style="vertical-align: bottom;border-width: 1px; border-color: #000000;"/></td>
+	                <td style="background-color: #ffffff; border:1px solid #D2D2D2; display:inline-block"><input onclick="google()" type="image" src="pics/google.png" height="32" width="32" alt="Google" style="vertical-align: bottom;"/></td>
+				    <td style="background-color: #ffffff; border:1px solid #D2D2D2; display:inline-block"><input onclick="youtube()" type="image" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png" height="32" width="32" alt="Youtube" style="vertical-align: bottom;"/></td>
+				</tr></table>
+			</div>
+			</form>
+		</div>
+		<div align="center" text-align="left">
+			<table text-align="left">
+
+				<tr>
+					<td><b style="color:black; font-family:Luminari, fantasy; font-size:150%;">Useful sites</b>
+						<ul>
+							<li><a href="https://reportbot.io/" target="_blank">ReportBot.io</a></li>
+
+							<li><a href="https://www.vedbex.com/tools/csgo_reportbot" target="_blank">Vedbex Report Bot</li>	
+							<li><a href="https://extremereportbot.com/" target="_blank">ExtremeReportBot.com</a></li>
+							<li><a href="https://old.reddit.com/r/GlobalOffensive" target="_blank">/r/GlobalOffensive</a></li>
+						</ul>
+					</td>
+					<td>					<b> &nbsp;&nbsp; </b>
+						<ul>
+							<li><a href="https://steamcommunity.com/my/inventory/" target="_blank">Steam Inventory</a></li>
+							<li><a href="https://csgostats.gg/player/76561198181871149#/live" target="_blank">Main</a></li>
+							<li><a href="https://csgostats.gg/player/76561198138031998#/live" target="_blank">Alt</a></li>
+							<li><a href="http://inspirobot.me/"> InspiroBot</a>
+							</ul>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b style="color:black; font-size:160%;font-family:Brush Script MT ;">Calming sites</b>
+						<ul>
+							<li><a href="http://andrew.wang-hoyer.com/experiments/cloth/">Cloth</a></li>
+							<li><a href="http://www.effectgames.com/demos/canvascycle/">Canvas</a></li>
+							<li><a href="http://spielzeugz.de/html5/liquid-particles/"> Liquid</a></li>
+							<li><a href="https://lab.hakim.se/particles/01/"> Particle</a></li>
+						</ul>
+					</td>
+					<td>
+					<b> &nbsp;&nbsp; </b>
+					<ul>
+
+						<li><a href="http://weavesilk.com/">Silk</a></li></a></li>
+						<li><a href="http://www.sinuousgame.com/"> Sinuous</a></li>
+						<li><a href="https://lab.hakim.se/trail/02/"> Trails</a></li>
+						<li><a href="http://madebyevan.com/webgl-water/ "> Water</a></li>
+					</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<nav>
+<ul>
+	<li class="sub-menu-parent" tab-index="0">
+	<a href="#">Smokes </a>
+	<ul class="sub-menu">
+		<li><a href="https://imgur.com/a/r5jzk">Cache</a></li>
+		<li><a href="https://imgur.com/a/9m2Io">Cobble</a></li>
+		<li><a href="https://imgur.com/a/r0bIo">Mirage</a></li>
+		<li><a href="https://imgur.com/a/2bQRr">Overpass</a></li>
+	</ul></li>
+	</ul>
+	</nav>
+</html>
